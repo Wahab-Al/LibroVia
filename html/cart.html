@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your cart</title>
+    
+        <!-- // Links // -->
+            <!--/ Bootstrap -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+            <!--/Bootswatch -->
+                <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+            <!--/ css links -->
+            <link rel="stylesheet" href="../css/all.css">
+            <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark mb-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img width="100" height="100" src="https://img.icons8.com/keek/100/courses.png" alt="courses"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <span class="logo-name text-danger">LibroVia</span>
+                    <span class="logo-name-part2 text-warning text-lowercase d-none d-lg-flex mt-5"> your knowledge Hub</span>
+                    <ul class="navbar-nav me-auto">
+                    </ul>
+                    <button type="button" class="btn btn-outline-success m-2 rounded rounded-2 w-25 signInBtn sign-acc">SIGN IN</button>
+                    <button type="button" class="btn btn-outline-light m-2 rounded rounded-2 w-25 signUpBtn sign-accI">SIGN UP</button> 
+                    <p class="welcome text-danger mt-3 me-2 d-none me-4 text-uppercase"></p>
+                    <div class="cart me-2 d-inline-block">
+                        <i class="fa-solid fa-cart-plus fs-5 text-light cart-icon ">
+                        </i>
+                        <div class="counter text-light text-center d-none">0</div>
+                        <div class="viewAllItems text-danger bg-body-tertiary p-2 m-2 rounded rounded-2">
+                            <div class="added-book-container">
+                                
+                            </div>
+                            <button type="button" class="btn btn-light rounded rounded-2 w-100" id="toCart">see books</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light m-2 rounded rounded-2 w-50 w-25 logoutBtn ms-2 d-none">LOG OUT</button> 
+                </div>
+            </div>
+        </nav>
+        </header>
+        <main>
+        <div class="container">
+            <div class="Title d-flex fs-3 fw-bold text-white">Carts Items</div>
+            <div class="cart-main-row row">
+
+            </div>
+        </div><br>
+        <div class="price-container text-center fs-3 fw-bold text-white"></div><br>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="2" d="M0,64L60,101.3C120,139,240,213,360,208C480,203,600,117,720,106.7C840,96,960,160,1080,170.7C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <section>
+        <div class="container">
+            <div class="Title d-flex fs-3 fw-bold text-white">Carts Favorite</div>
+            <div class="row favorite-books flex-nowrap overflow-y-hidden">
+
+            </div>
+        </div>
+    </section>
+
+
+        <!-- // Scripts // -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        
+        <!--/ fortawesome icon js-->
+        <script src="../js/all.js"></script> 
+        
+        <!--/ cart js-->
+        <script src="../js/cart.js"></script>
+        
+        <!--/ logout js -->
+        <script src="../js/logout.js"></script>
+</body>
+</html>

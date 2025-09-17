@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LibroVia</title>
+
+        <!-- // Links // -->
+            <!--/ Bootstrap -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+            <!--/Bootswatch -->
+                <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+            <!--/ css links -->
+            <link rel="stylesheet" href="./css/all.css">
+            <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-dark mb-3" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img width="100" height="100" src="https://img.icons8.com/keek/100/courses.png" alt="courses"/>
+                    </a>
+                    <span class="logo-name text-danger">LibroVia</span>
+                    <span class="logo-name-part2 text-warning text-lowercase d-block mt-5"> your knowledge Hub</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav me-auto">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <form class="border border-1 m-5 p-4 rounded rounded-2 bg-dark text-light shadow">
+                    <div class="d-flex justify-content-between">
+                        <div class="mb-3 me-2 w-50">
+                        <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <input type="text" class="form-control name-inp" id="exampleInputPassword1" placeholder="Enter name">
+                        </div>
+                        <div class="mb-3 w-50">
+                            <label for="exampleInputPassword1" class="form-label">Surname</label>
+                            <input type="text" class="form-control surname-inp" id="exampleInputPassword1" placeholder="Enter surname">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control email-inp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control pass-inp" id="exampleInputPassword1" placeholder="Enter password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-light w-100 text-uppercase signUp-btn">Sign Up</button>
+                    <div class="mt-2 text-light text-center">already have an account? <a href="sign_in.html" class="text-truncate text-decoration-none">Sign In</a></div>
+                </form>
+            </div>
+        </main>
+        <!-- // Scripts // -->
+            <!--/ all script -->
+            <script src="../js/all.js"></script>
+            <!--/ sign_in script -->
+            <script src="../js/sign_up.js"></script>
+    </body>
+</html>
