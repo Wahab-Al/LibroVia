@@ -22,8 +22,6 @@ const allBooks = [
   { id: 10, title: "The Alchemist", imgUrl: "https://covers.openlibrary.org/b/id/8128691-L.jpg", price: 55, category: "Philosophy", addedQuantity: 0 },
   { id: 11, title: "Sapiens: A Brief History of Humankind", imgUrl: "https://covers.openlibrary.org/b/id/8377224-L.jpg", price: 95, category: "History", addedQuantity: 0 },
   { id: 12, title: "1984", imgUrl: "https://covers.openlibrary.org/b/id/7222246-L.jpg", price: 45, category: "Dystopian", addedQuantity: 0 },
-
-  // New themes
   { id: 13, title: "Clean Code", imgUrl: "https://covers.openlibrary.org/b/id/8155406-L.jpg", price: 80, category: "Programming", addedQuantity: 0 },
   { id: 14, title: "JavaScript: The Good Parts", imgUrl: "https://covers.openlibrary.org/b/id/8232000-L.jpg", price: 65, category: "Programming", addedQuantity: 0 },
   { id: 15, title: "Eloquent JavaScript", imgUrl: "https://covers.openlibrary.org/b/id/8155401-L.jpg", price: 70, category: "Programming", addedQuantity: 0 },
@@ -422,6 +420,20 @@ function filterBooks() {
     }
     return true;
   });
+
+  if (filteredBooks.length < 1) {
+    mainPage.innerHTML = `
+      <div class="d-flex flex-column justify-content-center align-items-center"
+        style="width:100vw; height:100vh;">
+      <img src="../img/9214769.jpg" 
+          alt="empty cart" 
+          class="img-fluid rounded-3 mb-3"
+          style="width:100%; height:100%; object-fit:cover;">
+      <p class="text-muted position-absolute bottom-0 mb-4 fs-4">Book not found</p>
+    </div>
+  `;
+    return; 
+  }
 
   /// Display filtered books
   mainPage.innerHTML = filteredBooks.map(book => {

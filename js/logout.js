@@ -3,6 +3,7 @@ let sign_acc = document.querySelector('.sign-acc')
 let sign_accI = document.querySelector('.sign-accI')
 let welcomeText = document.querySelector('.welcome')
 let logoutBtn = document.querySelector('.logoutBtn')
+let logoutCart = document.querySelector('#logoutCart')
 let cart_icon = document.querySelector('.cart-icon')
 
 let counterBtn = document.querySelector('.counter')
@@ -35,5 +36,12 @@ if (localStorage.getItem('email')) {
 logoutBtn.addEventListener('click', () => {
     localStorage.clear()
     location = "index.html"
+})
+//#endregion//
+
+// #region Logout Event Handling From Cart
+logoutCart.addEventListener('click', () => {
+    localStorage.clear()
+    location = "../index.html"
 })
 //#endregion

@@ -5,6 +5,10 @@ const addedBookIntoCart = JSON.parse(localStorage.getItem('addedBookIntoCart')) 
 const cartMainPage = document.querySelector('.cart-main-row')
 const favoriteStore_ = JSON.parse(localStorage.getItem('favoriteStore')) || []
 const priceContainer = document.querySelector('.price-container')
+const signUpBtn_ = document.querySelector('.signUpBtn');
+const signInBtn_ = document.querySelector('.signInBtn');
+
+/// let →
 let favoriteBooksContainer = document.querySelector('.favorite-books')
 
 let bookCounter = localStorage.getItem('bookCounter') || 0;
@@ -12,6 +16,11 @@ document.querySelector('.counter').textContent = bookCounter;
 
 ///Restore button states from storage
 let bookBtnStates = JSON.parse(localStorage.getItem('bookBtnStates')) || {};
+//#endregion
+
+//#region Sign in/up navigation
+signUpBtn_.addEventListener('click', () => location.href = '../html/sign_up.html');
+signInBtn_.addEventListener('click', () => location.href = '../html/sign_in.html');
 //#endregion
 
 //#region Helper → update homepage button state
@@ -36,6 +45,15 @@ function updateBookBtnUI(id, added) {
 
 //#region Show books on cart homepage
 function displayBooksInCart() {
+  if (addedBookIntoCart.length < 1) {
+    cartMainPage.innerHTML = `
+      <div class="text-center my-5">
+        <img src="../img/emptyCart.jpg" alt="empty cart" class="img-fluid mb-3 rounded rounded-3" style="max-width:300px;">
+        <p class="text-muted">Your cart is empty</p>
+      </div>
+    `;
+    return; 
+  }
     cartMainPage.innerHTML = `
     <div class="row">
         ${addedBookIntoCart
@@ -93,7 +111,7 @@ function displayFavoritesBook() {
                 <div class="card-body d-flex flex-column align-items-center text-center">
                     <h5 class="card-title text-uppercase">${book.title}</h5>
                     <p class="card-text">Category: ${book.category}</p>
-                    <i class="fa-solid fa-heart fs-4 heartIcon mb-2" data-id="${book.id}" onClick="removeFromFavorite(${book.id})"></i>
+                    <i class="fa-solid fa-heart fs-4 heartIcon mb-2" data-id="${book.id}" style="color: maroon" onClick="removeFromFavorite(${book.id})"></i>
                 </div>
             </div>
         </div>

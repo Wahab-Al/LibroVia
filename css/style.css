@@ -14,8 +14,14 @@
 }
 
 body{
-    background-color:#1d1d1dad;
-    /* background-color:#212529d9; */
+    background: linear-gradient(
+    to top,
+    #6c757d,   
+    #495057,   
+    #343a40,   
+    #212529,   
+    #000000    
+    );
     perspective: 1000px;
 }
 
