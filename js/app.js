@@ -429,7 +429,7 @@ function filterBooks() {
           alt="empty cart" 
           class="img-fluid rounded-3 mb-3"
           style="width:100%; height:100%; object-fit:cover;">
-      <p class="text-muted position-absolute bottom-0 mb-4 fs-4">Book not found</p>
+      <p class="text-muted position-absolute bottom-0 mb-4 fs-1 translate-middle-y fw-bolder text-uppercase">Book not found</p>
     </div>
   `;
     return; 

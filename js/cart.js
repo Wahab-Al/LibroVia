@@ -7,6 +7,7 @@ const favoriteStore_ = JSON.parse(localStorage.getItem('favoriteStore')) || []
 const priceContainer = document.querySelector('.price-container')
 const signUpBtn_ = document.querySelector('.signUpBtn');
 const signInBtn_ = document.querySelector('.signInBtn');
+const favorite = document.querySelector('.favorite')
 
 /// let →
 let favoriteBooksContainer = document.querySelector('.favorite-books')
@@ -49,9 +50,10 @@ function displayBooksInCart() {
     cartMainPage.innerHTML = `
       <div class="text-center my-5">
         <img src="../img/emptyCart.jpg" alt="empty cart" class="img-fluid mb-3 rounded rounded-3" style="max-width:300px;">
-        <p class="text-muted">Your cart is empty</p>
+        <p class="text-muted fs-2 fw-bolder">Your cart is empty</p>
       </div>
     `;
+    priceContainer.classList.add('d-none')
     return; 
   }
     cartMainPage.innerHTML = `
@@ -103,6 +105,10 @@ displayBooksInCart()
 
 //#region Display favorite books
 function displayFavoritesBook() {
+  if(favoriteStore_.length < 1){
+    favorite.classList.add('d-none')
+    return
+  }
     favoriteBooksContainer.innerHTML = favoriteStore_.map(book => {
     return `
         <div class="col col-md-4 mb-5">

@@ -22,6 +22,10 @@ body{
     #212529,   
     #000000    
     );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
     perspective: 1000px;
 }
 
