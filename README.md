@@ -55,7 +55,7 @@
 
 ![Home Page](https://github.com/Wahab-Al/LibroVia/blob/3a4c70af71e2108f2fae43d6a018a9b11be22647/appScreenshots/Screenshot%202025-09-21%20235551.png)
 ![Empty Cart Page Screenshot](https://github.com/Wahab-Al/LibroVia/blob/34d8f81ae50071d44df6a755af5bf7e25b1ff1f1/appScreenshots/Screenshot%202025-09-21%20235608.png)  
-![Cart Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235708.png)  
+![Cart Page Screenshot](https://github.com/Wahab-Al/LibroVia/blob/ce5c99952633441561d2d91dad735fc86c18b777/appScreenshots/Screenshot%202025-09-21%20235708.png)  
 ![Favorite Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235720.png)  
 
 
