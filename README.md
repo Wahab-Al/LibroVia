@@ -5,7 +5,7 @@
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![BoostTheme](https://img.shields.io/badge/BoostTheme-Shopify-blueviolet?logo=shopify&logoColor=white)](https://boostheme.com/)
+[![Boostwatch](https://https://bootswatch.com/)](https://boostwatch.com/)
 
 ---
 
