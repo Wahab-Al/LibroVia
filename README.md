@@ -53,7 +53,7 @@
 
 ## Demo
 
-![Home Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235551.png)  
+![Home Page Screenshot](./appScreenshots/Screenshot_2025-09-21_235551.png)  
 ![Empty Cart Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235608.png)  
 ![Cart Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235708.png)  
 ![Favorite Page Screenshot](./appScreenshots/Screenshot%2025-09-21%235720.png)  
