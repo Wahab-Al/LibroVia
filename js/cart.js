@@ -255,6 +255,8 @@ function removeFromFavorite(id) {
     /// Remove book card from DOM
     const bookCard = document.querySelector(`.favorite-books [data-id="${id}"]`)?.closest('.col');
     if (bookCard) bookCard.remove();
+    if(favoriteStore_ == '')
+      favorite.classList.add('d-none')
 }
 
 //#endregion
