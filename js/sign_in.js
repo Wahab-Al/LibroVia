@@ -10,15 +10,32 @@ let getPassword = localStorage.getItem('password');
 //#region Sign-in Event Handling
 sign_in_btn.addEventListener("click", (e) => {
     e.preventDefault();
+
     if (email.value === "" || pass.value === "") {
-        alert("Please fill in both fields");
+        Swal.fire({
+            icon: "warning",
+            title: "Missing Information",
+            text: "Please fill in both fields!",
+            confirmButtonColor: "#3085d6"
+        });
     } else {
         if (getEmail && getPassword && getEmail.trim() === email.value.trim() && getPassword === pass.value) {
-            setTimeout(() => {
+            Swal.fire({
+                icon: "success",
+                title: "Login Successful!",
+                text: "Welcome back!",
+                showConfirmButton: false,
+                timer: 1500
+            }).then(() => {
                 location = "../index.html";
-            }, 300);
+            });
         } else {
-            alert("Email or password is incorrect!");
+            Swal.fire({
+                icon: "error",
+                title: "Login Failed",
+                text: "Email or password is incorrect!",
+                confirmButtonColor: "#d33"
+            });
         }
     }
 });

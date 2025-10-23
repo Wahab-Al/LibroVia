@@ -60,17 +60,17 @@ function showBooks() {
   mainPage.innerHTML = books.map(book => {
     return `
       <div class="col">
-        <div class="card index-card mt-4 h-100 rounded rounded-5 bg-white text-dark shadow">
-          <img src="${book.imgUrl}" class="card-img-top rounded-5 shadow" alt="${book.title}">
-          <div class="card-body d-flex flex-column align-items-center text-center">
-              <h5 class="card-title text-uppercase">${book.title}</h5>
-              <p class="card-text">Price: ${book.price}€</p>
-              <p class="card-text">Category: ${book.category}</p>
-              <i class="fa-solid fa-heart fs-4 heartIcon mb-2" 
+        <div class="card index-card mt-4 h-100 rounded rounded-5 text-dark shadow">
+          <img src="${book.imgUrl}" class="card-img-top opacity-75 rounded-5 shadow" alt="${book.title}">
+          <div class="card-body d-flex flex-column align-items-center p-3 text-center">
+              <h5 class="card-title text-uppercase text-light">${book.title}</h5>
+              <p class="card-text text-light">Price: ${book.price}€</p>
+              <p class="card-text text-light">Category: ${book.category}</p>
+              <i class="fa-solid fa-heart fs-4 heartIcon mb-2 text-light" 
                 data-id="${book.id}" 
                 onClick="addToFavoriteStore(${book.id}, this)">
               </i>
-              <button class="btn btn-outline-dark mt-auto rounded rounded-3 shadow intoCartBtn" 
+              <button class="btn btn-outline-light mt-auto rounded rounded-3 shadow intoCartBtn" 
                 data-id="${book.id}" 
                 onClick="intoCart(${book.id}, this)">Add to cart
               </button>
