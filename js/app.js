@@ -445,7 +445,7 @@ function filterBooks() {
               <h5 class="card-title text-uppercase">${book.title}</h5>
               <p class="card-text">Price: ${book.price}€</p>
               <p class="card-text">Category: ${book.category}</p>
-              <i class="fa-solid fa-heart fs-4 heartIcon mb-2" 
+              <i class="fa-solid fa-heart fs-4 heartIcon border-0 mb-2" 
                 data-id="${book.id}" 
                 onClick="addToFavoriteStore(${book.id}, this)">
               </i>

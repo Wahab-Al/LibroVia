@@ -112,7 +112,7 @@ function displayFavoritesBook() {
     favoriteBooksContainer.innerHTML = favoriteStore_.map(book => {
     return `
         <div class="col col-md-4 mb-5">
-            <div class="card index-card mt-4 h-100 rounded rounded-5 bg-white text-dark shadow">
+            <div class="card index-card mt-4 h-100 rounded rounded-5 bg-white text-light shadow">
                 <img src="${book.imgUrl}" class="card-img-top rounded-5 shadow" alt="${book.title}">
                 <div class="card-body d-flex flex-column align-items-center text-center">
                     <h5 class="card-title text-uppercase">${book.title}</h5>
