@@ -6,9 +6,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 [![Bootswatch](https://img.shields.io/badge/Bootswatch-563D7C)](https://bootswatch.com/)
-[![SweetAlert2](https://img.shields.io/badge/SweetAlert2-%23FF6B6B.svg?style=for-the-badge&logo=SweetAlert2&logoColor=white)](https://sweetalert2.github.io/)
-[![SweetAlert2](https://img.shields.io/badge/SweetAlert2-alerts%20made%20easy-ff6b6b.svg)](https://sweetalert2.github.io/)
-[![SweetAlert2](https://img.shields.io/badge/SweetAlert2-alerts%20made%20easy-ff6b6b.svg)](https://sweetalert2.github.io/)
 [![SweetAlert2](https://img.shields.io/badge/SweetAlert2-JS%20popup%20library-purple?style=flat-square)](https://sweetalert2.github.io/)
 
 
