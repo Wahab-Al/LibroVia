@@ -53,10 +53,13 @@
 
 ## Demo
 
-![Home Page](https://github.com/Wahab-Al/LibroVia/blob/3a4c70af71e2108f2fae43d6a018a9b11be22647/appScreenshots/MainPage.png)
-![Empty Cart Page Screenshot](https://github.com/Wahab-Al/LibroVia/blob/34d8f81ae50071d44df6a755af5bf7e25b1ff1f1/appScreenshots/Sign_in.png)  
-![Cart Page Screenshot](https://github.com/Wahab-Al/LibroVia/blob/ce5c99952633441561d2d91dad735fc86c18b777/appScreenshots/Screenshot%202025-09-21%20235708.png)  
-![Favorite Page Screenshot](https://github.com/Wahab-Al/LibroVia/blob/5670c6b82d9f68ac8999bf18a0fc44d72bbea543/appScreenshots/Screenshot%202025-09-21%20235720.png)  
+![Main Page](https://github.com/Wahab-Al/LibroVia/blob/3a4c70af71e2108f2fae43d6a018a9b11be22647/appScreenshots/MainPage.png)
+![Sign In](https://github.com/Wahab-Al/LibroVia/blob/34d8f81ae50071d44df6a755af5bf7e25b1ff1f1/appScreenshots/Sign_in.png)  
+![Sign Up](https://github.com/Wahab-Al/LibroVia/blob/ce5c99952633441561d2d91dad735fc86c18b777/appScreenshots/Sign_up.png)  
+![add Book](https://github.com/Wahab-Al/LibroVia/blob/5670c6b82d9f68ac8999bf18a0fc44d72bbea543/appScreenshots/addBook.png)  
+![Empty Cart](https://github.com/Wahab-Al/LibroVia/blob/5670c6b82d9f68ac8999bf18a0fc44d72bbea543/appScreenshots/EmptyCart.png)  
+![Cart Page](https://github.com/Wahab-Al/LibroVia/blob/5670c6b82d9f68ac8999bf18a0fc44d72bbea543/appScreenshots/cartPage.png)  
+![Favorite Page](https://github.com/Wahab-Al/LibroVia/blob/5670c6b82d9f68ac8999bf18a0fc44d72bbea543/appScreenshots/FavoritePage.png)  
 
 
 ---
