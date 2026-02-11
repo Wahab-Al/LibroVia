@@ -10,29 +10,30 @@ const searchSelect = document.querySelector('.form-select');
 const searchInputField = document.querySelector('.search');
 
 const allBooks = [
-  { id: 1, title: "The Great Gatsby", imgUrl: "https://covers.openlibrary.org/b/id/7222246-L.jpg", price: 50, category: "Classic", addedQuantity: 0 },
-  { id: 2, title: "Atomic Habits", imgUrl: "https://covers.openlibrary.org/b/id/11153233-L.jpg", price: 75, category: "Self-Help", addedQuantity: 0 },
-  { id: 3, title: "To Kill a Mockingbird", imgUrl: "https://covers.openlibrary.org/b/id/9871352-L.jpg", price: 55, category: "Classic", addedQuantity: 0 },
-  { id: 4, title: "The Catcher in the Rye", imgUrl: "https://covers.openlibrary.org/b/id/8231856-L.jpg", price: 42, category: "Classic", addedQuantity: 0 },
-  { id: 5, title: "Pride and Prejudice", imgUrl: "https://covers.openlibrary.org/b/id/8091016-L.jpg", price: 65, category: "Romance", addedQuantity: 0 },
-  { id: 6, title: "The Hobbit", imgUrl: "https://covers.openlibrary.org/b/id/6979861-L.jpg", price: 70, category: "Fantasy", addedQuantity: 0 },
-  { id: 7, title: "Harry Potter and the Sorcerer's Stone", imgUrl: "https://covers.openlibrary.org/b/id/7884866-L.jpg", price: 85, category: "Fantasy", addedQuantity: 0 },
-  { id: 8, title: "The Fellowship of the Ring", imgUrl: "https://covers.openlibrary.org/b/id/7992031-L.jpg", price: 90, category: "Fantasy", addedQuantity: 0 },
-  { id: 9, title: "The Da Vinci Code", imgUrl: "https://covers.openlibrary.org/b/id/240726-L.jpg", price: 60, category: "Thriller", addedQuantity: 0 },
-  { id: 10, title: "The Alchemist", imgUrl: "https://covers.openlibrary.org/b/id/8128691-L.jpg", price: 55, category: "Philosophy", addedQuantity: 0 },
-  { id: 11, title: "Sapiens: A Brief History of Humankind", imgUrl: "https://covers.openlibrary.org/b/id/8377224-L.jpg", price: 95, category: "History", addedQuantity: 0 },
-  { id: 12, title: "1984", imgUrl: "https://covers.openlibrary.org/b/id/7222246-L.jpg", price: 45, category: "Dystopian", addedQuantity: 0 },
-  { id: 13, title: "Clean Code", imgUrl: "https://covers.openlibrary.org/b/id/8155406-L.jpg", price: 80, category: "Programming", addedQuantity: 0 },
-  { id: 14, title: "JavaScript: The Good Parts", imgUrl: "https://covers.openlibrary.org/b/id/8232000-L.jpg", price: 65, category: "Programming", addedQuantity: 0 },
-  { id: 15, title: "Eloquent JavaScript", imgUrl: "https://covers.openlibrary.org/b/id/8155401-L.jpg", price: 70, category: "Programming", addedQuantity: 0 },
-  { id: 16, title: "Deep Work", imgUrl: "https://covers.openlibrary.org/b/id/8232100-L.jpg", price: 50, category: "Self-Help", addedQuantity: 0 },
-  { id: 17, title: "The Pragmatic Programmer", imgUrl: "https://covers.openlibrary.org/b/id/8232150-L.jpg", price: 85, category: "Programming", addedQuantity: 0 },
-  { id: 18, title: "Astrophysics for People in a Hurry", imgUrl: "https://covers.openlibrary.org/b/id/8232200-L.jpg", price: 60, category: "Science", addedQuantity: 0 },
-  { id: 19, title: "Artificial Intelligence: A Modern Approach", imgUrl: "https://covers.openlibrary.org/b/id/8232250-L.jpg", price: 95, category: "Technology", addedQuantity: 0 },
-  { id: 20, title: "Cracking the Coding Interview", imgUrl: "https://covers.openlibrary.org/b/id/8232300-L.jpg", price: 90, category: "Programming", addedQuantity: 0 },
-  { id: 21, title: "Thinking, Fast and Slow", imgUrl: "https://covers.openlibrary.org/b/id/8232350-L.jpg", price: 70, category: "Psychology", addedQuantity: 0 },
-  { id: 22, title: "The Lean Startup", imgUrl: "https://covers.openlibrary.org/b/id/8232400-L.jpg", price: 60, category: "Business", addedQuantity: 0 }
+  { id: 1, title: "Clean Code", imgUrl: "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg", price: 80, category: "Programming", addedQuantity: 0 },
+  { id: 2, title: "The Pragmatic Programmer", imgUrl: "https://covers.openlibrary.org/b/title/The%20Pragmatic%20Programmer-L.jpg", price: 85, category: "Programming", addedQuantity: 0 },
+  { id: 3, title: "JavaScript: The Good Parts", imgUrl: "https://covers.openlibrary.org/b/title/JavaScript:%20The%20Good%20Parts-L.jpg", price: 65, category: "Programming", addedQuantity: 0 },
+  { id: 4, title: "Eloquent JavaScript", imgUrl: "https://covers.openlibrary.org/b/title/Eloquent%20JavaScript-L.jpg", price: 70, category: "Programming", addedQuantity: 0 },
+  { id: 5, title: "Cracking the Coding Interview", imgUrl: "https://covers.openlibrary.org/b/title/Cracking%20the%20Coding%20Interview-L.jpg", price: 90, category: "Programming", addedQuantity: 0 },
+  { id: 6, title: "Introduction to Algorithms", imgUrl: "https://covers.openlibrary.org/b/title/Introduction%20to%20Algorithms-L.jpg", price: 95, category: "Algorithms", addedQuantity: 0 },
+  { id: 7, title: "Design Patterns (GoF)", imgUrl: "https://covers.openlibrary.org/b/title/Design%20Patterns-L.jpg", price: 88, category: "Architecture", addedQuantity: 0 },
+  { id: 8, title: "Refactoring (Martin Fowler)", imgUrl: "https://covers.openlibrary.org/b/title/Refactoring-L.jpg", price: 75, category: "Programming", addedQuantity: 0 },
+  { id: 9, title: "The Clean Coder", imgUrl: "https://covers.openlibrary.org/b/title/The%20Clean%20Coder-L.jpg", price: 60, category: "Professionalism", addedQuantity: 0 },
+  { id: 10, title: "Code Complete", imgUrl: "https://covers.openlibrary.org/b/title/Code%20Complete-L.jpg", price: 82, category: "Software Engineering", addedQuantity: 0 },
+  { id: 11, title: "SICP (Wizard Book)", imgUrl: "https://covers.openlibrary.org/b/title/Structure%20and%20Interpretation%20of%20Computer%20Programs-L.jpg", price: 90, category: "Computer Science", addedQuantity: 0 },
+  { id: 12, title: "Docker Deep Dive", imgUrl: "https://covers.openlibrary.org/b/title/Docker%20Deep%20Dive-L.jpg", price: 55, category: "DevOps", addedQuantity: 0 },
+  { id: 13, title: "You Don't Know JS Yet", imgUrl: "https://m.media-amazon.com/images/I/81kqrwS1nNL.jpg", price: 45, category: "JavaScript", addedQuantity: 0 },
+  { id: 14, title: "Domain-Driven Design", imgUrl: "https://covers.openlibrary.org/b/title/Domain-Driven%20Design-L.jpg", price: 85, category: "Architecture", addedQuantity: 0 },
+  { id: 15, title: "Site Reliability Engineering", imgUrl: "https://covers.openlibrary.org/b/title/Site%20Reliability%20Engineering-L.jpg", price: 70, category: "DevOps", addedQuantity: 0 },
+  { id: 16, title: "Building Microservices", imgUrl: "https://covers.openlibrary.org/b/title/Building%20Microservices-L.jpg", price: 78, category: "Backend", addedQuantity: 0 },
+  { id: 17, title: "Modern Operating Systems", imgUrl: "https://covers.openlibrary.org/b/title/Modern%20Operating%20Systems-L.jpg", price: 110, category: "Systems", addedQuantity: 0 },
+  { id: 18, title: "Principles of Compilers", imgUrl: "https://covers.openlibrary.org/b/title/Principles%20of%20Compilers-L.jpg", price: 120, category: "Computer Science", addedQuantity: 0 },
+  { id: 19, title: "Computer Networking", imgUrl: "https://covers.openlibrary.org/b/title/Computer%20Networking-L.jpg", price: 105, category: "Networking", addedQuantity: 0 },
+  { id: 20, title: "Pro Git", imgUrl: "https://covers.openlibrary.org/b/title/Pro%20Git-L.jpg", price: 40, category: "Tools", addedQuantity: 0 },
+  { id: 21, title: "Test Driven Development", imgUrl: "https://covers.openlibrary.org/b/title/Test%20Driven%20Development-L.jpg", price: 65, category: "Testing", addedQuantity: 0 },
+  { id: 22, title: "The Mythical Man-Month", imgUrl: "https://covers.openlibrary.org/b/title/The%20Mythical%20Man-Month-L.jpg", price: 50, category: "Management", addedQuantity: 0 }
 ];
+
 
 
 /// Save books in localStorage
